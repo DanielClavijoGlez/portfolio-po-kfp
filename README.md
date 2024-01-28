@@ -22,3 +22,5 @@
 5. En la descripción, en el final, la parte: "(spoiler)" es un checkbox oculto al que se le han creado en css elementos :checked y :hover
 
 6. En principio el CSS no debe ser muy difícil de seguir pues he usado clases con nombres bastante representativos, además de que se ha tratado de seguir el orden de la estructura del HTML. En caso de pérdida buscar los comentarios del tipo /* -------footer------- */, que sirven de guía para los contenedores de orden superior. Los del tipo /* description----------- */ son para los subcontenedores.
+
+7. Tambíen he llevado a cabo el deployment con github pages
