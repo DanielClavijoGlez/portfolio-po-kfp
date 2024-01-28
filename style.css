@@ -524,6 +524,14 @@ footer a i {
   #description p > label:hover {
     font-size: 18px;
   }
+  .banner::before {
+  content: "Haz clic sobre la imagen para ver mis proyectos";
+  position: relative;
+  top: -20px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  }
   fieldset.main-info, .info.form-element {
     width: 70%;
   }
