@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ping Xiao Po Curso Web</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/28faf68260.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="flex-div">
+    <div class="nav-left">
+      <a href="#description"><img src="images/logo-panda.png"></a>
+    </div>
+    <div class="nav-right flex-div">
+      <a href="#projects">Proyectos</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#contact">Contacto</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="description">
+      <h1>Ping Xiao Po</h1>
+      <p>Vengo de un pueblo de pandas que fue destruido por el sádico Lord Shen en su campaña para exterminar nuestra
+        especie para evitar que se cumpliera la profecía de que un guerrero "blanco y negro" lo derrotaría. No sé qué
+        pasó con mis padres, pero si no me hubieran ocultado y metido en la caja en la que viajé por toda China y que se
+        encontró el Sr. Ping no habría sobrevivido.</p>
+      <p>Me gusta mucho comer, pero es sobre todo cuando me enfado que me quedo muy embostado. Ayudo a mi padre en su
+        restaurante, se me da bien cocinar. Sin embargo, mi mayor afición es el Kung Fu; conozco muchísimas tradiciones
+        de guerreros, movimientos, artefactos, etc, y espero algún día llegar a ser <span>El Guerrero Dragón</span>
+        <input type="checkbox" id="spoiler"><label for="spoiler">(spoiler)</label>
+      </p>
+    </section>
+    <hr>
+
+    <section id="skills" class="flex-div">
+      <h2>Mis habilidades</h2>
+      <div class="strength flex-div">
+        <div class="name-progress">
+          <span class="flex-div">Fuerza<span>99%</span></span>
+        </div>
+        <div class="progress-bar">
+          <div class="actual-progress"></div>
+        </div>
+      </div>
+      <div class="speed flex-div">
+        <div class="name-progress">
+          <span class="flex-div">Velocidad<span>95%</span></span>
+        </div>
+        <div class="progress-bar">
+          <div class="actual-progress"></div>
+        </div>
+      </div>
+      <div class="agility flex-div">
+        <div class="name-progress">
+          <span class="flex-div">Agilidad<span>97%</span></span>
+        </div>
+        <div class="progress-bar">
+          <div class="actual-progress"></div>
+        </div>
+      </div>
+      <div class="maturity flex-div">
+        <div class="name-progress">
+          <span class="flex-div">Madurez<span>30%</span></span>
+        </div>
+        <div class="progress-bar">
+          <div class="actual-progress"></div>
+        </div>
+      </div>
+      <div class="maturity flex-div">
+        <div class="name-progress">
+          <span class="flex-div">Madurez<span>30%</span></span>
+        </div>
+        <div class="progress-bar">
+          <div class="actual-progress"></div>
+        </div>
+      </div>
+      <div class="maturity flex-div">
+        <div class="name-progress">
+          <span class="flex-div">Madurez<span>30%</span></span>
+        </div>
+        <div class="progress-bar">
+          <div class="actual-progress"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="banner" id="projects">
+    <a href="projects.html">
+      <img src="images/banner1318.jpg"
+        srcset="images/banner550.jpg, images/banner980.jpg 980w, images/banner1318.jpg 1318w, images/banner1653 1653w"></a>
+  </section>
+
+  <form id="contact" class="flex-div">
+    <fieldset class="main-info flex-div">
+      <div class="form-element flex-div">
+        <label for="name">Nombre</label>
+        <input id="name" type="text" name="name" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-element flex-div">
+        <label for="surname">Apellido</label>
+        <input id="surname" type="text" name="surname" placeholder="Tu primer apellido" required>
+      </div>
+      <div class="form-element flex-div">
+        <label for="phone-number">Teléfono</label>
+        <input id="phone-number" type="text" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" name="phone-number"
+          placeholder="Número de teléfono" required>
+      </div>
+      <div class="form-element flex-div">
+        <label for="github-username">Usuario de Github</label>
+        <input id="github-username" type="text" pattern="@.+" name="github-username"
+          placeholder="Con el formato: @nombre-usuario" required>
+      </div>
+    </fieldset>
+    <fieldset class="form-element">
+      <legend>¿Cómo me conociste?</legend>
+      <div class="answer-list flex-div">
+        <div class="answer-container flex-div">
+          <label for="answer1">Zoo</label>
+          <input id="answer1" name="answer" value="zoo" type="radio">
+        </div>
+        <div class="answer-container flex-div">
+          <label for="answer2">Cine</label>
+          <input id="answer2" name="answer" value="cinema" type="radio" checked>
+        </div>
+        <div class="answer-container flex-div">
+          <label for="answer3">Redes sociales</label>
+          <input id="answer3" name="answer" value="social-media" type="radio">
+        </div>
+        <div class="answer-container flex-div">
+          <label for="answer4">Dojo</label>
+          <input id="answer4" name="answer" value="dojo" type="radio">
+        </div>
+      </div>
+    </fieldset>
+    <div class="info form-element flex-div">
+      <label for="more-info">Más información</label>
+      <textarea name="more-info" id="more-info"
+        placeholder="Escibe aquí cualquier pregunta o algo que me quieras decir"></textarea>
+    </div>
+    <div class="newsletter form-element flex-div">
+      <label for="newsletter">Quiero acceso a la newsletter</label>
+      <input type="checkbox" name="newsletter" id="newsletter" value="selected">
+    </div>
+    <div class="buttons flex-div">
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+  <footer class="flex-div">
+    <a href="https://www.instagram.com/kungfupanda/" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@kungfupanda" target="_blank"><i class="fa fa-youtube"></i></a>
+    <a href="https://www.facebook.com/KungFuPanda/" target="_blank"><i class="fa fa-facebook"></i></a>
+  </footer>
+
+</body>
+
+</html>
